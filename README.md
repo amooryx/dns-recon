@@ -1,8 +1,8 @@
-﻿# dns-recon
+# dns-recon
 
 > Red team post-exploitation tool — authorized use only.
 
-`ash
+```bash
 python dns_recon.py --help
 ```
 
