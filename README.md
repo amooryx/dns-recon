@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./banner.svg" alt="dns-recon" width="800">
+</div>
+
 # dns-recon
 
 > Red team post-exploitation tool — authorized use only.
