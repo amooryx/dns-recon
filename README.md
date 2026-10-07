@@ -24,6 +24,11 @@ Reverse lookups are opt-in and bounded to ten returned addresses:
 python dns_recon.py --ptr example.com
 ```
 
+Each resolver lookup runs in a worker process with a five-second deadline.
+Within one run, lookup starts are spaced at least 250 ms apart. Thus `--ptr`
+can issue at most eleven bounded lookups total (one forward lookup and ten
+reverse lookups).
+
 JSON output is available with `-o results.json`. PTR lookup failures are
 reported rather than silently discarded. No subdomain enumeration or
 brute-force queries are performed.
